@@ -3,6 +3,8 @@
     -ms-text-size-adjust: 100%;
     font-family: sans-serif;
   }
+
+  
   
   body {
     margin: 0;
@@ -35594,7 +35596,9 @@ text-align:center;
     }
   
     .container-56-copy {
-      margin-right: 20px;
+      /* margin-right: 20px; 
+       
+      */
       justify-content: flex-end;
       align-items: center;
       display: flex;
@@ -52641,4 +52645,49 @@ text-align:center;
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+  }
+
+
+
+
+
+
+  .copy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .copy-btn {
+    font-family: inherit;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .copy-btn:hover {
+    background-color: white;
+    color: #000;
+  }
+  
+  .copy-confirm {
+    position: absolute;
+    top: -30px;
+    background-color: #000;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  .copy-confirm.show {
+    opacity: 1;
   }
